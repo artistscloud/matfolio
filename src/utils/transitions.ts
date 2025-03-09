@@ -100,7 +100,7 @@ export const slideInRight = {
 };
 
 // Use this HOC to wrap components with motion
-export const withTransition = <P extends object>(Component: React.ComponentType<P>) => {
+export const withTransition = <P extends object>(Component: React.ComponentType<P>): React.FC<P> => {
   return function WithTransition(props: P) {
     return (
       <motion.div
