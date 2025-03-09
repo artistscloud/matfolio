@@ -40,7 +40,7 @@ const blogPostsData = [
   },
   {
     id: 'machine-learning-basics',
-    title: 'Machine Learning Fundamentals: A Beginner's Guide',
+    title: 'Machine Learning Fundamentals: A Beginner\'s Guide',
     category: 'AI',
     excerpt: 'Break down complex machine learning concepts into digestible information for those just starting their AI journey.',
     date: '2023-03-05',
