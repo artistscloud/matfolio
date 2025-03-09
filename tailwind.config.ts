@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom theme colors
+				forest: {
+					DEFAULT: '#2D4F3C',
+					50: '#F3F7F5',
+					100: '#E0EAE5',
+					200: '#C1D5CA',
+					300: '#9BBBA9',
+					400: '#70A183',
+					500: '#4D8062',
+					600: '#2D4F3C',
+					700: '#24402F',
+					800: '#1B3024',
+					900: '#122018',
+				},
+				matteblack: {
+					DEFAULT: '#1A1A1A',
+					50: '#F5F5F5',
+					100: '#E5E5E5',
+					200: '#CCCCCC',
+					300: '#B3B3B3',
+					400: '#999999',
+					500: '#666666',
+					600: '#4D4D4D',
+					700: '#333333',
+					800: '#1A1A1A',
+					900: '#0D0D0D',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +112,41 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-up': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'scale-in': {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'slide-right': {
+					'0%': { transform: 'translateX(-100%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'slide-left': {
+					'0%': { transform: 'translateX(100%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'blur-in': {
+					'0%': { filter: 'blur(8px)', opacity: '0' },
+					'100%': { filter: 'blur(0)', opacity: '1' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-up': 'fade-up 0.5s ease-out',
+				'scale-in': 'scale-in 0.5s ease-out',
+				'slide-right': 'slide-right 0.5s ease-out',
+				'slide-left': 'slide-left 0.5s ease-out',
+				'blur-in': 'blur-in 0.5s ease-out',
 			}
 		}
 	},
